@@ -1,14 +1,15 @@
-import axios from 'axios';
-
-const QUESTION_API_BASE = 'http://localhost:8082';
-const QUIZ_API_BASE = 'http://localhost:8088';
+import axios from "axios";
 
 export const questionApi = axios.create({
-  baseURL: QUESTION_API_BASE,
-  headers: { 'Content-Type': 'application/json' },
+  baseURL: "https://question-service-production.up.railway.app",
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
 
 export const quizApi = axios.create({
-  baseURL: QUIZ_API_BASE,
-  headers: { 'Content-Type': 'application/json' },
+  baseURL: "https://YOUR-QUIZ-SERVICE.up.railway.app",
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
