@@ -8,7 +8,7 @@ export const questionApi = axios.create({
 });
 
 export const quizApi = axios.create({
-  baseURL: "https://YOUR-QUIZ-SERVICE.up.railway.app",
+  baseURL: "https://quiz-service-production.up.railway.app",
   headers: {
     "Content-Type": "application/json",
   },
